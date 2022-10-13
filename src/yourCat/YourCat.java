@@ -116,7 +116,7 @@ public class YourCat extends JFrame {
 		btnBuy.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				if (rdbtnSnack.isSelected()) {
-					if (Integer.valueOf(txtMoney.getText()) <= 15) {
+					if (Integer.valueOf(txtMoney.getText()) < 15) {
 						JOptionPane.showMessageDialog(null, "Dinheiros insuficiente. Mande seu gato trabalhar.");
 					} else {
 						txtMoney.setText(String.valueOf(Integer.valueOf(txtMoney.getText()) - 15));
@@ -126,7 +126,7 @@ public class YourCat extends JFrame {
 				}
 
 				if (rdbtnBed.isSelected()) {
-					if (Integer.valueOf(txtMoney.getText()) <= 5) {
+					if (Integer.valueOf(txtMoney.getText()) < 5) {
 						JOptionPane.showMessageDialog(null, "Dinheiros insuficiente. Mande seu gato trabalhar.");
 					}
 					txtHappy.setText(String.valueOf(Integer.valueOf(txtHappy.getText()) + 5));
@@ -134,7 +134,7 @@ public class YourCat extends JFrame {
 				}
 
 				if (rdbtnToy.isSelected()) {
-					if (Integer.valueOf(txtMoney.getText()) <= 10) {
+					if (Integer.valueOf(txtMoney.getText()) < 10) {
 						JOptionPane.showMessageDialog(null, "Dinheiros insuficiente. Mande seu gato trabalhar.");
 					}
 					txtHappy.setText(String.valueOf(Integer.valueOf(txtHappy.getText()) + 5));
@@ -142,7 +142,7 @@ public class YourCat extends JFrame {
 				}
 
 				if (rdbtnPortion.isSelected()) {
-					if (Integer.valueOf(txtMoney.getText()) <= 10) {
+					if (Integer.valueOf(txtMoney.getText()) < 10) {
 						JOptionPane.showMessageDialog(null, "Dinheiros insuficiente. Mande seu gato trabalhar.");
 					}
 					txtHappy.setText(String.valueOf(Integer.valueOf(txtHappy.getText()) + 5));
@@ -150,7 +150,7 @@ public class YourCat extends JFrame {
 				}
 
 				if (rdbtnCatNip.isSelected()) {
-					if (Integer.valueOf(txtMoney.getText()) <= 5) {
+					if (Integer.valueOf(txtMoney.getText()) < 5) {
 						JOptionPane.showMessageDialog(null, "Dinheiros insuficiente. Mande seu gato trabalhar.");
 					}
 					txtHappy.setText(String.valueOf(Integer.valueOf(txtHappy.getText()) + 5));
@@ -378,6 +378,7 @@ public class YourCat extends JFrame {
 							+ ". \nA fome diminuiu -5. \n A felicidade aumentou +5.");
 					txtHunger.setText(String.valueOf(Integer.valueOf(txtHunger.getText()) - 5));
 					txtHappy.setText(String.valueOf(Integer.valueOf(txtHappy.getText()) + 5));
+					txtPortion.setText(String.valueOf(Integer.valueOf(txtPortion.getText()) -1));
 					death(txtHunger, txtHappy);
 				} else {
 					JOptionPane.showMessageDialog(btnFood, "Sem comida. Compre mais.");
