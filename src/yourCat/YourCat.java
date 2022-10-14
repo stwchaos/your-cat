@@ -49,11 +49,11 @@ public class YourCat extends JFrame {
 	public static void death(JTextField txtHunger, JTextField txtHappy) {
 
 		if (Integer.valueOf(txtHunger.getText()) > 99) {
-			JOptionPane.showMessageDialog(null, "Seu gato morreu :(");
+			JOptionPane.showMessageDialog(null, "Seu gato morreu com fome :(");
 			System.exit(0);
 		}
 		if (Integer.valueOf(txtHappy.getText()) < 0) {
-			JOptionPane.showMessageDialog(null, "Seu gato morreu :(");
+			JOptionPane.showMessageDialog(null, "Seu gato morreu triste :(");
 			System.exit(0);
 		}
 
@@ -392,8 +392,7 @@ public class YourCat extends JFrame {
 		btnWorking.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 
-				JOptionPane.showMessageDialog(btnWorking, "Você mandou seu gato trabalhar " + txtName.getText()
-						+ "\nA felicidade diminuiu -10.\n A fome aumentou +10.\nVocê ganhou 10 dinheiros.");
+				JOptionPane.showMessageDialog(btnWorking, "Você mandou seu gato trabalhar. \nA felicidade diminuiu -10.\n A fome aumentou +10.\nVocê ganhou 10 dinheiros.");
 				txtHappy.setText(String.valueOf(Integer.valueOf(txtHappy.getText()) - 10));
 				txtHunger.setText(String.valueOf(Integer.valueOf(txtHunger.getText()) + 10));
 				txtMoney.setText(String.valueOf(Integer.valueOf(txtMoney.getText()) + 10));
