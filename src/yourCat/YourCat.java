@@ -93,23 +93,23 @@ public class YourCat extends JFrame {
 		panelShop.setLayout(null);
 
 		JRadioButton rdbtnCatNip = new JRadioButton("CatNip");
-		rdbtnCatNip.setBounds(21, 22, 62, 23);
+		rdbtnCatNip.setBounds(21, 22, 83, 23);
 		panelShop.add(rdbtnCatNip);
 
 		JRadioButton rdbtnPortion = new JRadioButton("Portion");
-		rdbtnPortion.setBounds(21, 49, 69, 23);
+		rdbtnPortion.setBounds(21, 49, 83, 23);
 		panelShop.add(rdbtnPortion);
 
 		JRadioButton rdbtnToy = new JRadioButton("Toy");
-		rdbtnToy.setBounds(135, 22, 46, 23);
+		rdbtnToy.setBounds(135, 22, 69, 23);
 		panelShop.add(rdbtnToy);
 
 		JRadioButton rdbtnBed = new JRadioButton("Cat's bed");
-		rdbtnBed.setBounds(135, 49, 81, 23);
+		rdbtnBed.setBounds(145, 49, 92, 23);
 		panelShop.add(rdbtnBed);
 
 		JRadioButton rdbtnSnack = new JRadioButton("Snack");
-		rdbtnSnack.setBounds(21, 76, 62, 23);
+		rdbtnSnack.setBounds(21, 76, 83, 23);
 		panelShop.add(rdbtnSnack);
 
 		JButton btnBuy = new JButton("Buy");
@@ -165,27 +165,27 @@ public class YourCat extends JFrame {
 
 		JLabel lblNewLabel_3 = new JLabel("R$5");
 		lblNewLabel_3.setForeground(new Color(128, 64, 64));
-		lblNewLabel_3.setBounds(83, 26, 46, 14);
+		lblNewLabel_3.setBounds(106, 26, 46, 14);
 		panelShop.add(lblNewLabel_3);
 
 		JLabel lblNewLabel_4 = new JLabel("R$10");
 		lblNewLabel_4.setForeground(new Color(128, 64, 64));
-		lblNewLabel_4.setBounds(184, 26, 46, 14);
+		lblNewLabel_4.setBounds(206, 26, 46, 14);
 		panelShop.add(lblNewLabel_4);
 
 		JLabel lblNewLabel_5 = new JLabel("R$10");
 		lblNewLabel_5.setForeground(new Color(128, 64, 64));
-		lblNewLabel_5.setBounds(96, 53, 46, 14);
+		lblNewLabel_5.setBounds(106, 53, 46, 14);
 		panelShop.add(lblNewLabel_5);
 
 		JLabel lblNewLabel_6 = new JLabel("R$15");
 		lblNewLabel_6.setForeground(new Color(128, 64, 64));
-		lblNewLabel_6.setBounds(83, 80, 46, 14);
+		lblNewLabel_6.setBounds(106, 80, 46, 14);
 		panelShop.add(lblNewLabel_6);
 
 		JLabel lblNewLabel_7 = new JLabel("R$5");
 		lblNewLabel_7.setForeground(new Color(128, 64, 64));
-		lblNewLabel_7.setBounds(222, 53, 46, 14);
+		lblNewLabel_7.setBounds(251, 53, 46, 14);
 		panelShop.add(lblNewLabel_7);
 
 		JPanel panelWallet = new JPanel();
@@ -211,7 +211,7 @@ public class YourCat extends JFrame {
 		txtPortion.setColumns(10);
 
 		JLabel lblNewLabel = new JLabel("Money");
-		lblNewLabel.setBounds(54, 11, 46, 14);
+		lblNewLabel.setBounds(54, 11, 82, 14);
 		panelWallet.add(lblNewLabel);
 
 		JLabel lblNewLabel_2 = new JLabel("Snack");
